@@ -3,66 +3,66 @@ import React from 'react';
 export default function App() {
   return (
     <div style={{
-      fontFamily: 'Inter, sans-serif',
-      backgroundColor: '#0f172a', // Deep navy blue
-      color: '#cbd5e1',           // Metallic silver
+      fontFamily: 'sans-serif',
+      background: 'linear-gradient(to right, #0f2027, #203a43, #2c5364)',
+      color: '#e0e0e0',
       minHeight: '100vh',
-      padding: '3rem',
-      textAlign: 'center',
+      padding: '4rem 1rem',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center'
     }}>
       <img
         src="/logo.png"
         alt="ProdVision Logo"
         style={{ maxWidth: '180px', marginBottom: '2rem' }}
       />
-
-      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#e2e8f0' }}>
-        ProdVision
-      </h1>
-      <p style={{ fontSize: '1.2rem', marginBottom: '2rem', color: '#94a3b8' }}>
+      <h1 style={{ fontSize: '3rem', margin: '1rem 0' }}>ProdVision</h1>
+      <p style={{ fontSize: '1.25rem', maxWidth: '600px', textAlign: 'center' }}>
         Turn your existing security cameras into real-time production intelligence.
       </p>
 
-      <section style={{
-        maxWidth: '800px',
-        margin: '0 auto',
-        textAlign: 'left',
-        backgroundColor: '#1e293b',
-        padding: '2rem',
-        borderRadius: '12px',
-        boxShadow: '0 0 20px rgba(0,0,0,0.3)',
-      }}>
-        <h2 style={{ color: '#38bdf8', marginBottom: '1rem' }}>What the platform does</h2>
-        <ul style={{ lineHeight: '1.8rem' }}>
+      <section style={{ maxWidth: '700px', textAlign: 'left', marginTop: '4rem' }}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>What the Platform Does</h2>
+        <ul>
           <li>Detect production inefficiencies</li>
           <li>Monitor equipment usage and utilization</li>
           <li>Track safety compliance and identify risks</li>
           <li>Reduce downtime with real-time alerts</li>
           <li>Improve decision-making with AI-powered insights</li>
         </ul>
+      </section>
 
-        <h2 style={{ color: '#38bdf8', margin: '2rem 0 1rem' }}>Why it matters</h2>
+      <section style={{ maxWidth: '700px', textAlign: 'left', marginTop: '4rem' }}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Why It Matters</h2>
         <p>
-          Many manufacturers face challenges like unplanned downtime, high labor costs, and shrinking margins.
-          ProdVision provides affordable, actionable insights using tools you already own — your cameras.
-        </p>
-
-        <h2 style={{ color: '#38bdf8', margin: '2rem 0 1rem' }}>Who it’s for</h2>
-        <p>
-          Ideal for small to mid-sized manufacturers, plant managers, operations leads, and continuous improvement teams looking to optimize performance and safety.
+          Small and mid-sized manufacturers face increasing pressure to modernize. ProdVision helps bridge the gap by delivering affordable, AI-driven visibility into operations — without expensive hardware or lengthy setup.
         </p>
       </section>
 
+      <section style={{ maxWidth: '700px', textAlign: 'left', marginTop: '4rem' }}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Who It’s For</h2>
+        <p>
+          Plant managers, operations directors, and business owners who want to:
+        </p>
+        <ul>
+          <li>Gain real-time visibility</li>
+          <li>Improve training and safety</li>
+          <li>Reduce costly downtime</li>
+          <li>Enhance productivity without major investments</li>
+        </ul>
+      </section>
+
       <button style={{
-        marginTop: '3rem',
-        backgroundColor: '#2563eb',
-        color: '#f8fafc',
-        padding: '1rem 2rem',
+        backgroundColor: '#1f8ef1',
+        color: '#fff',
+        padding: '1rem 2.5rem',
         fontSize: '1.1rem',
         border: 'none',
-        borderRadius: '8px',
+        borderRadius: '30px',
         cursor: 'pointer',
-        boxShadow: '0 4px 14px rgba(0,0,0,0.3)'
+        marginTop: '4rem',
+        boxShadow: '0 4px 10px rgba(0,0,0,0.3)'
       }}>
         Request Free Demo
       </button>
