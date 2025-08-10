@@ -3,69 +3,69 @@ import React from 'react';
 export default function App() {
   return (
     <div style={{
-      fontFamily: 'sans-serif',
-      background: 'linear-gradient(to right, #0f2027, #203a43, #2c5364)',
-      color: '#e0e0e0',
+      fontFamily: 'Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial',
+      background: 'linear-gradient(180deg, #071422 0%, #16324a 100%)',
+      color: '#e6eef6',
       minHeight: '100vh',
-      padding: '4rem 1rem',
       display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center'
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '2rem'
     }}>
-      <img
-        src="/logo.png"
-        alt="ProdVision Logo"
-        style={{ maxWidth: '180px', marginBottom: '2rem' }}
-      />
-      <h1 style={{ fontSize: '3rem', margin: '1rem 0' }}>ProdVision</h1>
-      <p style={{ fontSize: '1.25rem', maxWidth: '600px', textAlign: 'center' }}>
-        Turn your existing security cameras into real-time production intelligence.
-      </p>
-
-      <section style={{ maxWidth: '700px', textAlign: 'left', marginTop: '4rem' }}>
-        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>What the Platform Does</h2>
-        <ul>
-          <li>Detect production inefficiencies</li>
-          <li>Monitor equipment usage and utilization</li>
-          <li>Track safety compliance and identify risks</li>
-          <li>Reduce downtime with real-time alerts</li>
-          <li>Improve decision-making with AI-powered insights</li>
-        </ul>
-      </section>
-
-      <section style={{ maxWidth: '700px', textAlign: 'left', marginTop: '4rem' }}>
-        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Why It Matters</h2>
-        <p>
-          Small and mid-sized manufacturers face increasing pressure to modernize. ProdVision helps bridge the gap by delivering affordable, AI-driven visibility into operations — without expensive hardware or lengthy setup.
-        </p>
-      </section>
-
-      <section style={{ maxWidth: '700px', textAlign: 'left', marginTop: '4rem' }}>
-        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Who It’s For</h2>
-        <p>
-          Plant managers, operations directors, and business owners who want to:
-        </p>
-        <ul>
-          <li>Gain real-time visibility</li>
-          <li>Improve training and safety</li>
-          <li>Reduce costly downtime</li>
-          <li>Enhance productivity without major investments</li>
-        </ul>
-      </section>
-
-      <button style={{
-        backgroundColor: '#1f8ef1',
-        color: '#fff',
-        padding: '1rem 2.5rem',
-        fontSize: '1.1rem',
-        border: 'none',
-        borderRadius: '30px',
-        cursor: 'pointer',
-        marginTop: '4rem',
-        boxShadow: '0 4px 10px rgba(0,0,0,0.3)'
+      <div style={{
+        width: '100%',
+        maxWidth: '900px',
+        textAlign: 'center',
+        background: 'linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))',
+        borderRadius: '16px',
+        padding: '3rem',
+        boxShadow: '0 10px 30px rgba(2,6,23,0.6)',
+        border: '1px solid rgba(255,255,255,0.04)'
       }}>
-        Request Free Demo
-      </button>
+        <img src="/logo.png" alt="ProdVision Logo" style={{ maxWidth: 160, margin: '0 auto 1.5rem' }} />
+
+        <h1 style={{ fontSize: '2.25rem', margin: 0, color: '#f1f5f9' }}>ProdVision</h1>
+        <p style={{ marginTop: '0.5rem', color: '#cbd5e1', fontSize: '1.05rem' }}>
+          AI-driven production insights for small manufacturers
+        </p>
+
+        <div style={{ marginTop: '2.25rem', padding: '1.75rem', borderRadius: 12, background: 'rgba(255,255,255,0.02)' }}>
+          <h2 style={{ fontSize: '1.5rem', margin: '0 0 0.5rem', color: '#e6f0fb' }}>Website Under Construction</h2>
+          <p style={{ color: '#9fb3c9', margin: '0 auto', maxWidth: 680 }}>
+            We&rsquo;re building something useful. In the meantime, request a free demo and we&rsquo;ll get back to you with pilot details and early access.
+          </p>
+
+          <div style={{ marginTop: '1.5rem', display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href="#demo" style={{
+              display: 'inline-block',
+              background: '#97a6b8',
+              color: '#072033',
+              padding: '0.9rem 1.4rem',
+              borderRadius: '999px',
+              fontWeight: 600,
+              textDecoration: 'none'
+            }}>Request Free Demo</a>
+
+            <a href="mailto:contact@prodvision.ai" style={{
+              display: 'inline-block',
+              border: '1px solid rgba(255,255,255,0.06)',
+              color: '#cfe7ff',
+              padding: '0.9rem 1.4rem',
+              borderRadius: '999px',
+              textDecoration: 'none'
+            }}>contact@prodvision.ai</a>
+          </div>
+
+          <small style={{ display: 'block', marginTop: '1rem', color: '#6b89a1' }}>
+            Want updates? Send us an email and we&rsquo;ll add you to the early-access list.
+          </small>
+        </div>
+
+        <footer style={{ marginTop: '1.75rem', color: '#6789a5', fontSize: '0.9rem' }}>
+          © {new Date().getFullYear()} ProdVision — Building practical AI for manufacturing
+        </footer>
+      </div>
     </div>
   );
 }
+
