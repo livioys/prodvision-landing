@@ -46,7 +46,7 @@ export default function App() {
               textDecoration: 'none'
             }}>Request Free Demo</a>
 
-            <a href="mailto:contact@prodvision.ai" style={{
+            <a href="mailto:contact@tryprodvision.com" style={{
               display: 'inline-block',
               border: '1px solid rgba(255,255,255,0.06)',
               color: '#cfe7ff',
